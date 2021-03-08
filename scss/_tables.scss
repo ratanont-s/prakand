@@ -1,0 +1,25 @@
+// .table-prakan-1
+.table-prakan-1{
+    thead{
+        tr{
+            th{
+                background: $primary-gd;
+                color: $white;
+                font-weight: 500;
+            }
+        }
+    }
+    tbody{
+        tr{
+            td{
+                .td-avatar{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid $secondary;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
