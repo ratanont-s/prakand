@@ -2,12 +2,31 @@
 @import './variables';
 @import './bootstrap/bootstrap.scss';
 @import './tables';
+@import './navs';
+@import './dropdowns';
 
 // Layout
 @import './layout/header';
 @import './layout/main';
 @import './layout/footer';
 
-html,body{
+html,
+body {
     position: relative;
+
+    @include media-breakpoint-down(md) {
+        &.offcanvas-open {
+
+            &::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $offcanvas-bg;
+                z-index: $zindex-fixed + 1;
+            }
+        }
+    }
 }

@@ -1,0 +1,15 @@
+.dropdown-custom-1 {
+    max-width: 317px;
+
+    .dropdown {
+        &-toggle {
+            display: block;
+            width: 100%;
+            background: $primary-gd;
+            color: $white;
+            border-radius: .25rem .25rem 0 0;
+            padding: .5rem 1rem;
+            border-width: 0;
+        }
+    }
+}

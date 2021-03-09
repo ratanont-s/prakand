@@ -3,4 +3,12 @@
     padding-top: 1rem;
     padding-bottom: 2rem;
     overflow-x: hidden;
+
+    @include media-breakpoint-up(lg) {
+        margin-top: 107px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 114px;
+    }
 }
