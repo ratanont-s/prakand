@@ -9,7 +9,6 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.3.2/css/fixedColumns.bootstrap4.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
@@ -52,83 +51,118 @@
                 </div>
             </div>
         </div>
+        <div class="header-nav">
+            <div class="header-nav-inner">
+                <a href="/" class="header-nav-logo d-lg-none"><img src="./assets/img/logo.png" alt="Prakan D"></a>
+                <ul class="nav justify-content-lg-center">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="#"><img src="./assets/img/graph.svg" alt="" class="nav-icon">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="./assets/img/protection.svg" alt="" class="nav-icon">ขายประกันภัย</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="./assets/img/file.svg" alt="" class="nav-icon">เสนอเบี้ยประกัน</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="./assets/img/bath.svg" alt="" class="nav-icon">รายงานยอดขาย</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="./assets/img/clock.svg" alt="" class="nav-icon">รายงานต่ออายุ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="./assets/img/wallet.svg" alt="" class="nav-icon">กระเป๋า (E-Wallet)</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="./assets/img/hierarchy.svg" alt="" class="nav-icon">สายงาน</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><img src="./assets/img/user.svg" alt="" class="nav-icon">บัญชีผู้ใช้</a>
+                    </li>
+                  </ul>
+            </div>
+        </div>
     </header>
     <main class="main">
         <div class="container-fluid">
             <h1>Main</h1>
             <div class="row">
-                <div class="col-xl-8"></div>
+                <div class="col-xl-8">
+
+                </div>
                 <div class="col-xl-4">
-                    <table id="table-1" class="table table-bordered text-center nowrap w-100">
-                        <tbody>
-                            <!-- พรบ. -->
-                            <tr>
-                                <th rowspan="4">พรบ.</th>
-                                <td>วันนี้</td>
-                                <td>สัปดาห์นี้</td>
-                                <td>เดือนนี้</td>
-                            </tr>
-                            <tr>
-                                <td>210,000 ฿</td>
-                                <td>120,000 ฿</td>
-                                <td>1,220,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>เมื่อวาน</td>
-                                <td>สัปดาห์ที่แล้ว</td>
-                                <td>เดือนที่แล้ว</td>
-                            </tr>
-                            <tr>
-                                <td>210,000 ฿</td>
-                                <td>120,000 ฿</td>
-                                <td>1,220,000 ฿</td>
-                            </tr>
-                            <!-- ภาคสมัครใจ -->
-                            <tr>
-                                <th rowspan="4">ภาคสมัครใจ</th>
-                                <td>วันนี้</td>
-                                <td>สัปดาห์นี้</td>
-                                <td>เดือนนี้</td>
-                            </tr>
-                            <tr>
-                                <td>210,000 ฿</td>
-                                <td>120,000 ฿</td>
-                                <td>1,220,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>เมื่อวาน</td>
-                                <td>สัปดาห์ที่แล้ว</td>
-                                <td>เดือนที่แล้ว</td>
-                            </tr>
-                            <tr>
-                                <td>210,000 ฿</td>
-                                <td>120,000 ฿</td>
-                                <td>1,220,000 ฿</td>
-                            </tr>
-                            <!-- ประกันภัยอื่นๆ -->
-                            <tr>
-                                <th rowspan="4">ประกันภัยอื่นๆ</th>
-                                <td>วันนี้</td>
-                                <td>สัปดาห์นี้</td>
-                                <td>เดือนนี้</td>
-                            </tr>
-                            <tr>
-                                <td>210,000 ฿</td>
-                                <td>120,000 ฿</td>
-                                <td>1,220,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>เมื่อวาน</td>
-                                <td>สัปดาห์ที่แล้ว</td>
-                                <td>เดือนที่แล้ว</td>
-                            </tr>
-                            <tr>
-                                <td>210,000 ฿</td>
-                                <td>120,000 ฿</td>
-                                <td>1,220,000 ฿</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center text-nowrap">
+                            <tbody>
+                                <!-- พรบ. -->
+                                <tr>
+                                    <th rowspan="4">พรบ.</th>
+                                    <td>วันนี้</td>
+                                    <td>สัปดาห์นี้</td>
+                                    <td>เดือนนี้</td>
+                                </tr>
+                                <tr>
+                                    <td>210,000 ฿</td>
+                                    <td>120,000 ฿</td>
+                                    <td>1,220,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>เมื่อวาน</td>
+                                    <td>สัปดาห์ที่แล้ว</td>
+                                    <td>เดือนที่แล้ว</td>
+                                </tr>
+                                <tr>
+                                    <td>210,000 ฿</td>
+                                    <td>120,000 ฿</td>
+                                    <td>1,220,000 ฿</td>
+                                </tr>
+                                <!-- ภาคสมัครใจ -->
+                                <tr>
+                                    <th rowspan="4">ภาคสมัครใจ</th>
+                                    <td>วันนี้</td>
+                                    <td>สัปดาห์นี้</td>
+                                    <td>เดือนนี้</td>
+                                </tr>
+                                <tr>
+                                    <td>210,000 ฿</td>
+                                    <td>120,000 ฿</td>
+                                    <td>1,220,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>เมื่อวาน</td>
+                                    <td>สัปดาห์ที่แล้ว</td>
+                                    <td>เดือนที่แล้ว</td>
+                                </tr>
+                                <tr>
+                                    <td>210,000 ฿</td>
+                                    <td>120,000 ฿</td>
+                                    <td>1,220,000 ฿</td>
+                                </tr>
+                                <!-- ประกันภัยอื่นๆ -->
+                                <tr>
+                                    <th rowspan="4">ประกันภัยอื่นๆ</th>
+                                    <td>วันนี้</td>
+                                    <td>สัปดาห์นี้</td>
+                                    <td>เดือนนี้</td>
+                                </tr>
+                                <tr>
+                                    <td>210,000 ฿</td>
+                                    <td>120,000 ฿</td>
+                                    <td>1,220,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>เมื่อวาน</td>
+                                    <td>สัปดาห์ที่แล้ว</td>
+                                    <td>เดือนที่แล้ว</td>
+                                </tr>
+                                <tr>
+                                    <td>210,000 ฿</td>
+                                    <td>120,000 ฿</td>
+                                    <td>1,220,000 ฿</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="mx-n3 mx-lg-0">
@@ -171,7 +205,7 @@
                             </div>
                         </div>
                     </div>
-                    <table id="table-2" class="table table-prakan-1 nowrap w-100">
+                    <table id="table-2" class="table table-prakan-1 w-100">
                         <thead>
                             <tr>
                                 <th>สมาชิก</th>
@@ -353,7 +387,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
-    <script src="https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js"></script>
     <script>
         $(function () {
             $('#table-1').DataTable({
@@ -369,7 +402,7 @@
                 scrollX: true,
                 scrollCollapse: true,
                 fixedColumns: true,
-                dom: "<'row'<'col-12'tr>>" +
+                dom: "<'row'<'col-12'<'table-responsive'tr>>>" +
                     "<'form-row'<'col-6 col-lg-3'l><'col-6 col-lg-6'p><'col-sm-12 col-lg-3 d-none d-lg-block'>>",
                 drawCallback: function () {
                     $('.dataTables_paginate > .pagination').addClass(
