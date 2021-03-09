@@ -1,5 +1,6 @@
 // Fonts
-$font-family-base: 'Kanit', sans-serif;
+$font-family-base: 'Kanit',
+sans-serif;
 $enable-responsive-font-sizes: true;
 
 // Colors
@@ -14,3 +15,6 @@ $dark: #393939;
 $body-bg: $light;
 
 $primary-gd: transparent linear-gradient(180deg, #398ECA 0%, #0071C1 100%) 0% 0% no-repeat padding-box;
+
+// Links
+$link-hover-decoration: none;

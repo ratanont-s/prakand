@@ -1,18 +1,59 @@
+// Datatable
+.dataTables {
+    &_paginate {
+        .pagination {
+
+            .previous,
+            .next {
+                display: none;
+            }
+
+            .page {
+                &-item {
+                    padding: 0 .25em;
+
+                    &.active {
+                        .page-link {
+                            background-color: $warning;
+                            color: $white;
+                        }
+                    }
+                }
+
+                &-link {
+                    width: 1.5em;
+                    height: 1.5em;
+                    border-radius: 10rem;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $warning;
+                    color: $warning;
+                    background-color: transparent;
+                }
+            }
+        }
+
+    }
+}
+
 // .table-prakan-1
-.table-prakan-1{
-    thead{
-        tr{
-            th{
+.table-prakan-1 {
+    thead {
+        tr {
+            th {
                 background: $primary-gd;
                 color: $white;
                 font-weight: 500;
             }
         }
     }
-    tbody{
-        tr{
-            td{
-                .td-avatar{
+
+    tbody {
+        tr {
+            td {
+                .td-avatar {
                     width: 30px;
                     height: 30px;
                     border-radius: 10rem;
@@ -22,4 +63,5 @@
             }
         }
     }
+
 }

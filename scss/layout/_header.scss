@@ -1,28 +1,43 @@
-.header{
-    &-top{
-        &-logo{
-            img{
+.header {
+    &-top {
+        &-logo {
+            img {
                 height: 50px;
             }
         }
-        .dropdown{
-            &-toggle{
-                &::after{
+
+        .dropdown {
+            &-toggle {
+                width: 60px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &::after {
                     display: none;
                 }
+
+                &:hover {
+                    background-color: rgba($primary, .1);
+                    border-radius: $border-radius;
+                }
             }
-            &-notice{
+
+            &-notice {
                 position: relative;
-                .badge{
+
+                .badge {
                     position: absolute;
                     top: 0;
                     right: 0;
                 }
             }
-            &-profile{
-                a{
-                    display: inline-block;
-                    img{
+
+            &-profile {
+                a {
+
+                    img {
                         width: 40px;
                         height: 40px;
                         object-fit: cover;
