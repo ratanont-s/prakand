@@ -1,3 +1,14 @@
+// Tables
+.table{
+    @include media-breakpoint-down(md){
+        tr{
+            th,td{
+                font-size: .75em;
+            }
+        }
+    }
+}
+
 // Datatable
 .dataTables {
     &_paginate {
@@ -38,8 +49,8 @@
     }
 }
 
-// .table-prakan-1
-.table-prakan-1 {
+// .table-custom-1
+.table-custom-1 {
     thead {
         tr {
             th {

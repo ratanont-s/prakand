@@ -1,0 +1,8 @@
+// Date
+.form-control[type='date']{
+    appearance: none;
+    background: $input-bg url('../img/calendar.svg') no-repeat right .75em center/1em;
+    &::-webkit-inner-spin-button,&::-webkit-calendar-picker-indicator{
+opacity: 0;
+    }
+}

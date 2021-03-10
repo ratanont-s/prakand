@@ -9,6 +9,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
@@ -25,7 +28,7 @@
                                     d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
                             </svg>
                         </a>
-                        <a href="/" class="header-top-logo"><img src="./assets/img/logo.png" alt="Prakan D"></a>
+                        <!-- <a href="/" class="header-top-logo"><img src="./assets/img/logo.png" alt="Prakan D"></a> -->
                     </div>
                     <div class="col-auto">
                         <div class="d-flex align-items-center">
@@ -137,86 +140,170 @@
                         </div>
                     </div>
                     <div class="card card-body border-primary">
-                        <canvas id="myChart" width="400" height="200"></canvas>
+                        <canvas id="myChart" width="800" height="400"></canvas>
                     </div>
                 </div>
                 <div class="col-xl-4 mb-5">
-                    <div class="table-responsive">
-                        <table class="table table-bordered text-center text-nowrap">
-                            <tbody>
-                                <!-- พรบ. -->
-                                <tr>
-                                    <th rowspan="4">พรบ.</th>
-                                    <td>วันนี้</td>
-                                    <td>สัปดาห์นี้</td>
-                                    <td>เดือนนี้</td>
-                                </tr>
-                                <tr>
-                                    <td>210,000 ฿</td>
-                                    <td>120,000 ฿</td>
-                                    <td>1,220,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>เมื่อวาน</td>
-                                    <td>สัปดาห์ที่แล้ว</td>
-                                    <td>เดือนที่แล้ว</td>
-                                </tr>
-                                <tr>
-                                    <td>210,000 ฿</td>
-                                    <td>120,000 ฿</td>
-                                    <td>1,220,000 ฿</td>
-                                </tr>
-                                <!-- ภาคสมัครใจ -->
-                                <tr>
-                                    <th rowspan="4">ภาคสมัครใจ</th>
-                                    <td>วันนี้</td>
-                                    <td>สัปดาห์นี้</td>
-                                    <td>เดือนนี้</td>
-                                </tr>
-                                <tr>
-                                    <td>210,000 ฿</td>
-                                    <td>120,000 ฿</td>
-                                    <td>1,220,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>เมื่อวาน</td>
-                                    <td>สัปดาห์ที่แล้ว</td>
-                                    <td>เดือนที่แล้ว</td>
-                                </tr>
-                                <tr>
-                                    <td>210,000 ฿</td>
-                                    <td>120,000 ฿</td>
-                                    <td>1,220,000 ฿</td>
-                                </tr>
-                                <!-- ประกันภัยอื่นๆ -->
-                                <tr>
-                                    <th rowspan="4">ประกันภัยอื่นๆ</th>
-                                    <td>วันนี้</td>
-                                    <td>สัปดาห์นี้</td>
-                                    <td>เดือนนี้</td>
-                                </tr>
-                                <tr>
-                                    <td>210,000 ฿</td>
-                                    <td>120,000 ฿</td>
-                                    <td>1,220,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>เมื่อวาน</td>
-                                    <td>สัปดาห์ที่แล้ว</td>
-                                    <td>เดือนที่แล้ว</td>
-                                </tr>
-                                <tr>
-                                    <td>210,000 ฿</td>
-                                    <td>120,000 ฿</td>
-                                    <td>1,220,000 ฿</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="slider slider-custom-1">
+                        <div class="slider-item">
+                            <div class="card border-primary">
+                                <h6 class="card-header bg-primary border-primary text-white text-center">รายได้ผ่านการขายด้วยตนเอง</h6>
+                                <div class="card-body p-0">
+                                    <table class="table table-bordered table-striped table-sm text-center mb-0">
+                                        <tbody>
+                                            <!-- พรบ. -->
+                                            <tr>
+                                                <th rowspan="4" class="bg-white">พรบ.</th>
+                                                <td>วันนี้</td>
+                                                <td>สัปดาห์นี้</td>
+                                                <td>เดือนนี้</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>เมื่อวาน</td>
+                                                <td>สัปดาห์ที่แล้ว</td>
+                                                <td>เดือนที่แล้ว</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <!-- ภาคสมัครใจ -->
+                                            <tr>
+                                                <th rowspan="4" class="bg-white">ภาคสมัครใจ</th>
+                                                <td>วันนี้</td>
+                                                <td>สัปดาห์นี้</td>
+                                                <td>เดือนนี้</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>เมื่อวาน</td>
+                                                <td>สัปดาห์ที่แล้ว</td>
+                                                <td>เดือนที่แล้ว</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <!-- ประกันภัยอื่นๆ -->
+                                            <tr>
+                                                <th rowspan="4" class="bg-white">ประกันภัยอื่นๆ</th>
+                                                <td>วันนี้</td>
+                                                <td>สัปดาห์นี้</td>
+                                                <td>เดือนนี้</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>เมื่อวาน</td>
+                                                <td>สัปดาห์ที่แล้ว</td>
+                                                <td>เดือนที่แล้ว</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="card border-primary">
+                                <h6 class="card-header bg-primary border-primary text-white text-center">รายได้ผ่านการขายด้วยตนเอง 2</h6>
+                                <div class="card-body p-0">
+                                    <table class="table table-bordered table-striped table-sm text-center mb-0">
+                                        <tbody>
+                                            <!-- พรบ. -->
+                                            <tr>
+                                                <th rowspan="4" class="bg-white">พรบ.</th>
+                                                <td>วันนี้</td>
+                                                <td>สัปดาห์นี้</td>
+                                                <td>เดือนนี้</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>เมื่อวาน</td>
+                                                <td>สัปดาห์ที่แล้ว</td>
+                                                <td>เดือนที่แล้ว</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <!-- ภาคสมัครใจ -->
+                                            <tr>
+                                                <th rowspan="4" class="bg-white">ภาคสมัครใจ</th>
+                                                <td>วันนี้</td>
+                                                <td>สัปดาห์นี้</td>
+                                                <td>เดือนนี้</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>เมื่อวาน</td>
+                                                <td>สัปดาห์ที่แล้ว</td>
+                                                <td>เดือนที่แล้ว</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <!-- ประกันภัยอื่นๆ -->
+                                            <tr>
+                                                <th rowspan="4" class="bg-white">ประกันภัยอื่นๆ</th>
+                                                <td>วันนี้</td>
+                                                <td>สัปดาห์นี้</td>
+                                                <td>เดือนนี้</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                            <tr>
+                                                <td>เมื่อวาน</td>
+                                                <td>สัปดาห์ที่แล้ว</td>
+                                                <td>เดือนที่แล้ว</td>
+                                            </tr>
+                                            <tr>
+                                                <td>210,000 ฿</td>
+                                                <td>120,000 ฿</td>
+                                                <td>1,220,000 ฿</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="mx-n3 mx-lg-0">
-                <div class="card card-body border-primary px-0 px-lg-3">
+                <div class="card px-4 pt-4 border-primary">
                     <div class="form-row align-items-end justify-content-center justify-content-xl-start">
                         <div class="col-6 col-md-6 col-xl-2 form-group">
                             <label for="">วันที่</label>
@@ -244,6 +331,10 @@
                                 <option value="">3</option>
                             </select>
                         </div>
+                        <div class="col-6 col-md-6 col-xl-2 form-group">
+                            <label for="">คำค้นหา</label>
+                            <input type="text" class="form-control" placeholder="Keyword">
+                        </div>
                         <div class="col col-md-6 col-xl-2 form-group">
                             <div class="form-row">
                                 <div class="col-6">
@@ -255,172 +346,174 @@
                             </div>
                         </div>
                     </div>
-                    <table id="table-2" class="table table-prakan-1 w-100">
-                        <thead>
-                            <tr>
-                                <th>สมาชิก</th>
-                                <th>อีเมล</th>
-                                <th>วันที่</th>
-                                <th>โทรศัพท์</th>
-                                <th>ยอดรวม</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                </td>
-                                <td>rattana.l@prakan.com</td>
-                                <td>2020-03-25<br />20:25:08</td>
-                                <td class="text-primary">093-562-1555</td>
-                                <td class="text-success">99,000 ฿</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="mx-n4">
+                        <table id="datatable-1" class="table table-custom-1 dt-responsive nowrap w-100">
+                            <thead>
+                                <tr>
+                                    <th>สมาชิก</th>
+                                    <th>อีเมล</th>
+                                    <th>วันที่</th>
+                                    <th>โทรศัพท์</th>
+                                    <th>ยอดรวม</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
+                                    </td>
+                                    <td>rattana.l@prakan.com</td>
+                                    <td>2020-03-25<br />20:25:08</td>
+                                    <td class="text-primary">093-562-1555</td>
+                                    <td class="text-success">99,000 ฿</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -437,24 +530,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
         $(function () {
-            $('#table-1').DataTable({
-                searching: false,
-                info: false,
-                scrollX: true,
-                scrollCollapse: true,
-                fixedColumns: true,
+            $(".slider").slick({
+                swipe: false,
+                touchMove: false,
+                fade: true,
             });
-            $('#table-2').DataTable({
+            $('#datatable-1').DataTable({
                 searching: false,
                 info: false,
-                scrollX: true,
-                scrollCollapse: true,
-                fixedColumns: true,
-                dom: "<'row'<'col-12'<'table-responsive'tr>>>" +
+                dom: "<'row'<'col-12'tr>>" +
                     "<'form-row'<'col-6 col-lg-3'l><'col-6 col-lg-6'p><'col-sm-12 col-lg-3 d-none d-lg-block'>>",
                 drawCallback: function () {
                     $('.dataTables_paginate > .pagination').addClass(
@@ -487,6 +578,7 @@
                 }]
             },
             options: {
+                maintainAspectRatio: false,
                 legend: {
                     align: 'start',
                     labels: {
