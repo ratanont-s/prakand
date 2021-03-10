@@ -110,477 +110,256 @@
     </header>
     <main class="main">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-8 mb-4">
-                    <div>
-                        <ul class="nav nav-custom-1 d-none d-lg-flex">
-                            <li class="nav-item">
-                                <a href="/" class="nav-link">รายได้</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index-2.html" class="nav-link active">ประวัติการขาย</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index-3.html" class="nav-link">รายงานยอดขายของลูกทีม</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="index-4.html" class="nav-link">รายงานต่ออายุ</a>
-                            </li>
-                        </ul>
-                        <div class="dropdown dropdown-custom-1 d-lg-none">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-                                รายได้
-                            </a>
+            <div>
+                <ul class="nav nav-custom-1 d-none d-lg-flex">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">รายได้</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index-2.html" class="nav-link active">ประวัติการขาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index-3.html" class="nav-link">รายงานยอดขายของลูกทีม</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index-4.html" class="nav-link">รายงานต่ออายุ</a>
+                    </li>
+                </ul>
+                <div class="dropdown dropdown-custom-1 d-lg-none">
+                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                        รายได้
+                    </a>
 
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="#">ประวัติการขาย</a>
-                                <a class="dropdown-item" href="#">รายงานยอดขายของลูกทีม</a>
-                                <a class="dropdown-item" href="#">รายงานต่ออายุ</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card-body border-primary">
-                        <div class="form-row align-items-end justify-content-center justify-content-xl-start mb-3">
-                            <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                                <label for="">วันที่</label>
-                                <input type="date" class="form-control">
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                                <label for="">ถึงวันที่</label>
-                                <input type="date" class="form-control">
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                                <label for="">ทีม</label>
-                                <select name="" id="" class="form-control">
-                                    <option value="">ทั้งหมด</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
-                            <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                                <label for="">ลูกทีม</label>
-                                <select name="" id="" class="form-control">
-                                    <option value="">ทั้งหมด</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                </select>
-                            </div>
-                            <div class="col col-md-6 col-xl-2 form-group">
-                                <div class="form-row">
-                                    <div class="col-6">
-                                        <button class="btn btn-success btn-block">ค้นหา</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button class="btn btn-secondary btn-block">ล้าง</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center align-items-center text-center text-sm-left">
-                            <div class="col-sm">
-                                <h5 class="text-warning">
-                                    <img src="./assets/img/bath-warning.svg" alt="" class="img-fluid mr-2">ร
-                                    ายได้ทั้งหมด : 410,000
-                                </h5>
-                            </div>
-                            <div class="col-sm-auto">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item">Export :</li>
-                                    <li class="list-inline-item">
-                                        <a href="/">
-                                            <img src="./assets/img/excel.svg" alt="" class="img-fluid">
-                                        </a>
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <a href="/">
-                                            <img src="./assets/img/pdf.svg" alt="" class="img-fluid">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <canvas id="myChart" width="800" height="400"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 mb-4">
-                    <div class="slider slider-custom-1">
-                        <div class="slider-item">
-                            <div class="card border-primary">
-                                <h6 class="card-header bg-primary border-primary text-white text-center">
-                                    รายได้ผ่านการขายด้วยตนเอง</h6>
-                                <div class="card-body p-0">
-                                    <table class="table table-bordered table-striped table-sm text-center mb-0">
-                                        <tbody>
-                                            <!-- พรบ. -->
-                                            <tr>
-                                                <th rowspan="4" class="bg-white align-middle">พรบ.</th>
-                                                <td>วันนี้</td>
-                                                <td>สัปดาห์นี้</td>
-                                                <td>เดือนนี้</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <tr>
-                                                <td>เมื่อวาน</td>
-                                                <td>สัปดาห์ที่แล้ว</td>
-                                                <td>เดือนที่แล้ว</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <!-- ภาคสมัครใจ -->
-                                            <tr>
-                                                <th rowspan="4" class="bg-white align-middle">ภาคสมัครใจ</th>
-                                                <td>วันนี้</td>
-                                                <td>สัปดาห์นี้</td>
-                                                <td>เดือนนี้</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <tr>
-                                                <td>เมื่อวาน</td>
-                                                <td>สัปดาห์ที่แล้ว</td>
-                                                <td>เดือนที่แล้ว</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <!-- ประกันภัยอื่นๆ -->
-                                            <tr>
-                                                <th rowspan="4" class="bg-white align-middle">ประกันภัยอื่นๆ</th>
-                                                <td>วันนี้</td>
-                                                <td>สัปดาห์นี้</td>
-                                                <td>เดือนนี้</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <tr>
-                                                <td>เมื่อวาน</td>
-                                                <td>สัปดาห์ที่แล้ว</td>
-                                                <td>เดือนที่แล้ว</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="card border-primary">
-                                <h6 class="card-header bg-primary border-primary text-white text-center">
-                                    รายได้ผ่านการขายด้วยตนเอง 2</h6>
-                                <div class="card-body p-0">
-                                    <table class="table table-bordered table-striped table-sm text-center mb-0">
-                                        <tbody>
-                                            <!-- พรบ. -->
-                                            <tr>
-                                                <th rowspan="4" class="bg-white align-middle">พรบ.</th>
-                                                <td>วันนี้</td>
-                                                <td>สัปดาห์นี้</td>
-                                                <td>เดือนนี้</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <tr>
-                                                <td>เมื่อวาน</td>
-                                                <td>สัปดาห์ที่แล้ว</td>
-                                                <td>เดือนที่แล้ว</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <!-- ภาคสมัครใจ -->
-                                            <tr>
-                                                <th rowspan="4" class="bg-white align-middle">ภาคสมัครใจ</th>
-                                                <td>วันนี้</td>
-                                                <td>สัปดาห์นี้</td>
-                                                <td>เดือนนี้</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <tr>
-                                                <td>เมื่อวาน</td>
-                                                <td>สัปดาห์ที่แล้ว</td>
-                                                <td>เดือนที่แล้ว</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <!-- ประกันภัยอื่นๆ -->
-                                            <tr>
-                                                <th rowspan="4" class="bg-white align-middle">ประกันภัยอื่นๆ</th>
-                                                <td>วันนี้</td>
-                                                <td>สัปดาห์นี้</td>
-                                                <td>เดือนนี้</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                            <tr>
-                                                <td>เมื่อวาน</td>
-                                                <td>สัปดาห์ที่แล้ว</td>
-                                                <td>เดือนที่แล้ว</td>
-                                            </tr>
-                                            <tr>
-                                                <td>210,000 ฿</td>
-                                                <td>120,000 ฿</td>
-                                                <td>1,220,000 ฿</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">ประวัติการขาย</a>
+                        <a class="dropdown-item" href="#">รายงานยอดขายของลูกทีม</a>
+                        <a class="dropdown-item" href="#">รายงานต่ออายุ</a>
                     </div>
                 </div>
             </div>
-            <div class="mx-n3 mx-lg-0">
-                <div class="card px-4 pt-4 border-primary">
-                    <h5 class="card-title text-primary">รายงานค่าคอมมิชชั่น</h5>
-                    <div class="form-row align-items-end justify-content-center justify-content-xl-start">
-                        <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                            <label for="">วันที่</label>
-                            <input type="date" class="form-control">
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                            <label for="">ถึงวันที่</label>
-                            <input type="date" class="form-control">
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                            <label for="">ทีม</label>
-                            <select name="" id="" class="form-control">
-                                <option value="">ทั้งหมด</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                            </select>
-                        </div>
-                        <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
-                            <label for="">ลูกทีม</label>
-                            <select name="" id="" class="form-control">
-                                <option value="">ทั้งหมด</option>
-                                <option value="">1</option>
-                                <option value="">2</option>
-                                <option value="">3</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-md-6 col-xl form-group">
-                            <label for="">คำค้นหา</label>
-                            <input type="text" class="form-control" placeholder="Keyword">
-                        </div>
-                        <div class="col col-md-6 col-xl-2 form-group">
-                            <div class="form-row">
-                                <div class="col-6">
-                                    <button class="btn btn-success btn-block">ค้นหา</button>
-                                </div>
-                                <div class="col-6">
-                                    <button class="btn btn-secondary btn-block">ล้าง</button>
-                                </div>
+            <div class="card card-body border-primary">
+                <div class="form-row align-items-end justify-content-center justify-content-xl-start">
+                    <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
+                        <label for="">วันที่</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
+                        <label for="">ถึงวันที่</label>
+                        <input type="date" class="form-control">
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
+                        <label for="">ทีม</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">ทั้งหมด</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-3 col-xl form-group">
+                        <label for="">ลูกทีม</label>
+                        <select name="" id="" class="form-control">
+                            <option value="">ทั้งหมด</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                        </select>
+                    </div>
+                    <div class="col col-md-6 col-xl-2 form-group">
+                        <div class="form-row">
+                            <div class="col-6">
+                                <button class="btn btn-success btn-block">ค้นหา</button>
+                            </div>
+                            <div class="col-6">
+                                <button class="btn btn-secondary btn-block">ล้าง</button>
                             </div>
                         </div>
                     </div>
-                    <div class="mx-n4">
-                        <table id="datatable-1" class="table table-custom-1 dt-responsive nowrap w-100">
-                            <thead>
-                                <tr>
-                                    <th>สมาชิก</th>
-                                    <th>อีเมล</th>
-                                    <th>วันที่</th>
-                                    <th>โทรศัพท์</th>
-                                    <th>ยอดรวม</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <img src="./assets/img/avatar.png" alt="" class="td-avatar">รัตนะ ลีภัทรพณิชย์
-                                    </td>
-                                    <td>rattana.l@prakan.com</td>
-                                    <td>2020-03-25<br />20:25:08</td>
-                                    <td class="text-primary">093-562-1555</td>
-                                    <td class="text-success">99,000 ฿</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
                 </div>
+                <table id="datatable-1" class="table table-custom-1">
+                    <thead>
+                        <tr>
+                            <th>เลขอ้างอิง</th>
+                            <th>วันที่</th>
+                            <th>ประเภท</th>
+                            <th>รายการ</th>
+                            <th>จำนวนเงิน</th>
+                            <th>การชำระเงิน</th>
+                            <th>สถานะ</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#3421484726123</td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td>ประกันภัยภาคบังคับ</td>
+                            <td class="text-primary">Insurance 8ทก-3394</td>
+                            <td class="text-center">990 ฿</td>
+                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
+                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
+                            <td>
+                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
+                                <a href="#"
+                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </main>
@@ -603,11 +382,6 @@
     <script src="./assets/js/main.js"></script>
     <script>
         $(function () {
-            $(".slider").slick({
-                swipe: false,
-                touchMove: false,
-                fade: true,
-            });
             $('#datatable-1').DataTable({
                 searching: false,
                 info: false,
@@ -621,59 +395,8 @@
                 language: {
                     sLengthMenu: "แสดง _MENU_"
                 },
+                responsive: true
             });
-        });
-    </script>
-    <script>
-        var ctx = document.getElementById('myChart');
-        var myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-                datasets: [{
-                    label: 'รายได้',
-                    data: [43000, 48000, 68000, 63000, 48000, 70000, 68000],
-                    backgroundColor: [
-                        'rgba(144, 200, 75, 0.06)',
-                    ],
-                    borderColor: [
-                        'rgba(144, 200, 75, 1)',
-                    ],
-                    pointBackgroundColor: 'rgba(144, 200, 75, 1)',
-                    pointStyle: 'circle',
-                }]
-            },
-            options: {
-                maintainAspectRatio: false,
-                legend: {
-                    align: 'start',
-                    labels: {
-                        usePointStyle: true,
-                        boxWidth: 0,
-                    },
-                    onClick: (e) => e.stopPropagation()
-                },
-                scales: {
-                    xAxes: [{
-                        gridLines: {
-                            borderDash: [4, 4],
-                            color: "rgba(204, 204, 204, 1)",
-                            zeroLineWidth: 0,
-                        }
-                    }],
-                    yAxes: [{
-                        ticks: {
-                            beginAtZero: true
-                        },
-                        gridLines: {
-                            borderDash: [4, 4],
-                            color: "rgba(204, 204, 204, 1)",
-                            zeroLineWidth: 0,
-                            offsetGridLines: true,
-                        }
-                    }]
-                }
-            }
         });
     </script>
 </body>
