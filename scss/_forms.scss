@@ -1,8 +1,16 @@
 // Date
-.form-control[type='date']{
+.form-control[type='date'] {
     appearance: none;
     background: $input-bg url('../img/calendar.svg') no-repeat right .75em center/1em;
-    &::-webkit-inner-spin-button,&::-webkit-calendar-picker-indicator{
-opacity: 0;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
     }
+}
+
+// Select
+select.form-control {
+    appearance: none;
+    background: $input-bg url('../img/select-arrow.svg') no-repeat right .75em center/1em;
 }

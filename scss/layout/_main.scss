@@ -1,7 +1,7 @@
 .main {
     margin-top: 66px;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
     overflow-x: hidden;
 
     @include media-breakpoint-up(lg) {
@@ -10,5 +10,10 @@
 
     @include media-breakpoint-up(xl) {
         margin-top: 114px;
+
+        >.container-fluid {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
     }
 }

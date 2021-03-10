@@ -131,6 +131,7 @@
             width: 100%;
             transition: all .3s ease-in-out;
             z-index: $zindex-fixed + 10000;
+            background-color: $offcanvas-bg;
 
             &.open {
                 left: 0;
