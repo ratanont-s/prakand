@@ -116,13 +116,13 @@
                         <a href="/" class="nav-link">รายได้</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index-2.html" class="nav-link active">ประวัติการขาย</a>
+                        <a href="index-2.html" class="nav-link">ประวัติการขาย</a>
                     </li>
                     <li class="nav-item">
                         <a href="index-3.html" class="nav-link">รายงานยอดขายของลูกทีม</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index-4.html" class="nav-link">รายงานต่ออายุ</a>
+                        <a href="index-4.html" class="nav-link active">รายงานต่ออายุ</a>
                     </li>
                 </ul>
                 <div class="dropdown dropdown-custom-1 d-lg-none">
@@ -138,32 +138,6 @@
                 </div>
             </div>
             <div class="card card-body border-primary">
-                <div class="form-row">
-                    <div class="col-md col-lg-auto">
-                        <div class="radio-custom-1 radio-custom-warning">
-                            <input type="radio" name="radio-input" id="radio-input-1" checked>
-                            <label for="radio-input-1">
-                                รายได้ของฉันทั้งหมด
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md col-lg-auto">
-                        <div class="radio-custom-1 radio-custom-warning">
-                            <input type="radio" name="radio-input" id="radio-input-2">
-                            <label for="radio-input-2">
-                                รายได้ผ่านระบบ
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-md col-lg-auto">
-                        <div class="radio-custom-1 radio-custom-warning">
-                            <input type="radio" name="radio-input" id="radio-input-3">
-                            <label for="radio-input-3">
-                                รายได้ผ่านลิงค์
-                            </label>
-                        </div>
-                    </div>
-                </div>
                 <div class="form-row align-items-end">
                     <div class="col-6 col-md-6 col-lg form-group">
                         <label for="">วันที่</label>
@@ -191,18 +165,9 @@
                             <option value="">3</option>
                         </select>
                     </div>
-                    <div class="col-6 col-md-6 col-lg form-group">
-                        <label for="">ประเภท</label>
-                        <select name="" id="" class="form-control">
-                            <option value="">ทั้งหมด</option>
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                        </select>
-                    </div>
                     <div class="w-100 d-none d-lg-block"></div>
                     <div class="col-6 col-md-6 col-lg form-group">
-                        <label for="">การชำระเงิน</label>
+                        <label for="">ประเภท</label>
                         <select name="" id="" class="form-control">
                             <option value="">ทั้งหมด</option>
                             <option value="">1</option>
@@ -219,7 +184,7 @@
                             <option value="">3</option>
                         </select>
                     </div>
-                    <div class="col-6 col-md-6 col-lg form-group">
+                    <div class="col-12 col-md-6 col-lg form-group">
                         <label for="">คำค้นหา</label>
                         <input type="text" class="form-control" placeholder="Keyword">
                     </div>
@@ -237,183 +202,220 @@
                 <table id="datatable-1" class="table table-custom-1">
                     <thead>
                         <tr>
-                            <th>เลขอ้างอิง</th>
-                            <th>วันที่</th>
                             <th>ประเภท</th>
                             <th>รายการ</th>
-                            <th>จำนวนเงิน</th>
-                            <th>การชำระเงิน</th>
+                            <th>วันที่สิ้นสุด</th>
+                            <th>จำนวนวันที่เหลือ</th>
                             <th>สถานะ</th>
+                            <th></th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>#3421484726123</td>
-                            <td>2020-03-25<br />20:25:08</td>
                             <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
+                            <td>2020-03-25<br />20:25:08</td>
+                            <td class="text-center">+8 วัน</td>
+                            <td>
+                                <span class="text-waiting"><i class="fas fa-check-circle"></i> รอการต่ออายุ</span>
+                            </td>
+                            <td>
+                                <button class="btn btn-success btn-block rounded-pill">ต่ออายุ</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยภาคสมัครใจ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center">+2 วัน</td>
+                            <td>
+                                <span class="text-success"><i class="fas fa-check-circle"></i> ต่ออายุสำเร็จ</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                         <tr>
-                            <td>#3421484726123</td>
+                            <td>ประกันภัยอื่นๆ</td>
+                            <td>
+                                <p class="text-primary mb-0"><span class="d-block">8ทก-3394</span>TOYOTA VIGO 2 Doors ปี
+                                    2012</p>
+                                <p class="text-success mb-0">ผู้เอาประกัน รัตนะ ลีภัทรพณิชย์</p>
+                            </td>
                             <td>2020-03-25<br />20:25:08</td>
-                            <td>ประกันภัยภาคบังคับ</td>
-                            <td class="text-primary">Insurance 8ทก-3394</td>
-                            <td class="text-center">990 ฿</td>
-                            <td class="text-center">บัตรเครดิต<br />ชำระเต็มจำนวน</td>
-                            <td class="text-warning"><i class="fas fa-clock"></i> รอชำระเงิน</td>
-                            <td class="text-center">
-                                <button class="btn btn-outline-success btn-block mb-2">รอชำระเงิน</button>
-                                <a href="#"
-                                    class="text-danger border-bottom border-danger text-nowrap">แจ้งปัญหาการชำระเงิน</a>
+                            <td class="text-center text-danger">0 วัน</td>
+                            <td>
+                                <span class="text-danger"><i class="fas fa-times-circle"></i> หมดการคุ้มครอง</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <button class="btn btn-primary btn-block rounded-pill">ส่ง SMS</button>
                             </td>
                         </tr>
                     </tbody>

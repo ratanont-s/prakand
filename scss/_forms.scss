@@ -14,3 +14,25 @@ select.form-control {
     appearance: none;
     background: $input-bg url('../img/select-arrow.svg') no-repeat right .75em center/1em;
 }
+
+// Radio
+.radio-custom {
+    &-1 {
+        input {
+            display: none;
+
+            &:checked~label {
+                background-color: $warning;
+            }
+        }
+
+        label {
+            display: block;
+            background-color: $disable;
+            color: $white;
+            text-align: center;
+            cursor: pointer;
+            @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, 10rem);
+        }
+    }
+}
