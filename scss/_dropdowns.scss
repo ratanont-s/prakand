@@ -11,5 +11,14 @@
             padding: .5rem 1rem;
             border-width: 0;
         }
+        &-menu{
+            background-color: #F0F0F0;
+        }
+        &-item{
+            color: $black;
+            &.active{
+                background-color: #CCCCCC;
+            }
+        }
     }
 }

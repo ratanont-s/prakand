@@ -25,6 +25,12 @@ table.dataTable>thead {
         }
     }
 }
+div.dataTables_wrapper div.dataTables_paginate ul.pagination{
+    justify-content: flex-end !important;
+    @include media-breakpoint-up(lg){
+        justify-content: center !important;
+    }
+}
 .dataTables {
     &_paginate {
         .pagination {
