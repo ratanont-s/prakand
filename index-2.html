@@ -244,7 +244,7 @@
                             <th>จำนวนเงิน</th>
                             <th>การชำระเงิน</th>
                             <th>สถานะ</th>
-                            <th></th>
+                            <th class="no-sort"></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -440,21 +440,7 @@
     <script src="./assets/js/main.js"></script>
     <script>
         $(function () {
-            $('#datatable-1').DataTable({
-                searching: false,
-                info: false,
-                dom: "<'row'<'col-12'tr>>" +
-                    "<'form-row'<'col-6 col-lg-3'l><'col-6 col-lg-6'p><'col-sm-12 col-lg-3 d-none d-lg-block'>>",
-                drawCallback: function () {
-                    $('.dataTables_paginate > .pagination').addClass(
-                        'justify-content-end justify-content-lg-center');
-                    $('.dataTables_length').addClass('text-left');
-                },
-                language: {
-                    sLengthMenu: "แสดง _MENU_"
-                },
-                responsive: true
-            });
+            $('#datatable-1').DataTable();
         });
     </script>
 </body>

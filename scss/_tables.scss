@@ -10,6 +10,21 @@
 }
 
 // Datatable
+table.dataTable>thead {
+    .sorting,.sorting_asc,.sorting_desc{
+        &::before {
+            content: "\f0de" !important;
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+            right: .5em;
+        }
+        &::after {
+            content: "\f0dd" !important;
+            font-weight: 900;
+            font-family: 'Font Awesome 5 Free';
+        }
+    }
+}
 .dataTables {
     &_paginate {
         .pagination {
